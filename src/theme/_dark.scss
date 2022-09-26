@@ -1,0 +1,8 @@
+body[theme="dark"] {
+  color: $color-Light;
+  background: $color-Dark;
+}
+
+body[theme="dark"] div {
+  opacity: 0.8;
+}

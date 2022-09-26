@@ -1,0 +1,53 @@
+@font-face {
+  font-family: BalooDa2-Regular;
+  src: url("./fonts/BalooDa2-Regular.ttf");
+}
+@font-face {
+  font-family: BalooDa2-Medium;
+  src: url("./fonts/BalooDa2-Medium.ttf");
+}
+@font-face {
+  font-family: BalooDa2-Bold;
+  src: url("./fonts/BalooDa2-Bold.ttf");
+}
+@font-face {
+  font-family: BalooDa2-SemiBold;
+  src: url("./fonts/BalooDa2-SemiBold.ttf");
+}
+@font-face {
+  font-family: BalooDa2-ExtraBold;
+  src: url("./fonts/BalooDa2-ExtraBold.ttf");
+}
+
+$font-Bold: BalooDa2-Bold;
+$font-Medium: BalooDa2-Medium;
+$font-Regular: BalooDa2-Regular;
+$font-SemiBold: BalooDa2-SemiBold;
+$font-ExtraBold: BalooDa2-ExtraBold;
+
+$color-primary: #282c34;
+$color-secondary: #20232a;
+$color-accent: #61dafb;
+$color-link: #06bcee;
+$color-Dark: #000000;
+$color-Light: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: $font-Regular;
+  color: $color-accent;
+}
+
+body {
+  margin: 0;
+  font-family: $font-Regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.link {
+  color: $color-link;
+}
