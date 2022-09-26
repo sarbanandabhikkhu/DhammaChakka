@@ -1,7 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "React App Sample",
-  "description": "React Startup App using Webpack CLI",
+  "short_name": "DhammaChakka",
+  "name": "DhammaChakka App",
+  "description": "DhammaChakka is a PWA and Made for a good practicing Buddhism as a Buddhist.",
   "icons": [
     {
       "src": "/assets/favicon.ico",
@@ -9,95 +9,83 @@
       "type": "image/x-icon"
     },
     {
-      "src": "/assets/logo48.png",
-      "type": "image/png",
-      "sizes": "48x48",
-      "purpose": "any"
-    },
-    {
-      "src": "/assets/logo72.png",
+      "src": "./assets/logo72.png",
       "type": "image/png",
       "sizes": "72x72",
       "purpose": "any"
     },
     {
-      "src": "/assets/logo96.png",
+      "src": "./assets/logo96.png",
       "type": "image/png",
       "sizes": "96x96",
       "purpose": "any"
     },
     {
-      "src": "/assets/logo128.png",
+      "src": "./assets/logo128.png",
       "type": "image/png",
       "sizes": "128x128",
       "purpose": "any"
     },
     {
-      "src": "/assets/logo192.png",
+      "src": "./assets/logo192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any"
     },
     {
-      "src": "/assets/logo384.png",
+      "src": "./assets/logo384.png",
       "type": "image/png",
       "sizes": "384x384",
       "purpose": "any"
     },
     {
-      "src": "/assets/logo512.png",
+      "src": "./assets/logo512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any"
     },
     {
-      "src": "/assets/icon48.png",
+      "src": "./assets/icon48.png",
       "type": "image/png",
       "sizes": "48x48",
       "purpose": "maskable"
     },
     {
-      "src": "/assets/icon72.png",
+      "src": "./assets/icon72.png",
       "type": "image/png",
       "sizes": "72x72",
       "purpose": "maskable"
     },
     {
-      "src": "/assets/icon96.png",
-      "type": "image/png",
-      "sizes": "96x96",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/assets/icon128.png",
+      "src": "./assets/icon128.png",
       "type": "image/png",
       "sizes": "128x128",
       "purpose": "maskable"
     },
     {
-      "src": "/assets/icon192.png",
+      "src": "./assets/icon192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "maskable"
     },
     {
-      "src": "/assets/icon384.png",
+      "src": "./assets/icon384.png",
       "type": "image/png",
       "sizes": "384x384",
       "purpose": "maskable"
     },
     {
-      "src": "/assets/icon512.png",
+      "src": "./assets/icon512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
     }
   ],
-  "id": ".",
+  "id": "/",
   "scope": "/",
   "start_url": "/",
-  "theme_color": "#61dafb", // react blue
-  "background_color": "#282c34", // react dark
+  "theme_color": "#61dafb",
+  "background_color": "#282c34",
   "display_override": ["window-control-overlay", "minimal-ui"],
   "display": "standalone",
   "shortcuts": [
@@ -105,12 +93,12 @@
       "name": "Homepage",
       "short_name": "Home",
       "description": "Go back home",
-      "url": "/home?source=pwa",
+      "url": "./index.html",
       "icons": [
-      	{
-      		"src": "/assets/home.png",
-      		"sizes": "192x192"
-      	}
+        {
+          "src": "./assets/logo.png",
+          "sizes": "192x192"
+        }
       ]
     }
   ],
@@ -119,22 +107,6 @@
       "src": "/assets/screenshot1.png",
       "type": "image/png",
       "sizes": "540x720"
-    },
-    {
-      "src": "/assets/screenshot2.jpg",
-      "type": "image/jpg",
-      "sizes": "540x720"
     }
   ]
 }
-
-
-  // <!-- Startup configuration -->
-  // <link rel="manifest" href="manifest.webmanifest">
-  // <!-- Fallback application metadata for legacy browsers -->
-  // <meta name="application-name" content="React App">
-  // <meta name="theme-color" media="(prefers-color-scheme: light)" content="#61dafb">
-  // <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#282c34">
-  // <link rel="icon" sizes="16x16 24x24 32x32 48x48 64x64" href="/assets/favicon.ico">
-  // <link rel="icon" sizes="512x512" href="/assets/logo.png">
-  // 

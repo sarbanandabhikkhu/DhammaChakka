@@ -1,0 +1,36 @@
+.Nav {
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: calc(100% - 20px);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  background: $color-secondary;
+  .Top {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 175px);
+    overflow: hidden;
+  }
+  .Bottom {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    background: $color-secondary;
+  }
+  img {
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.6;
+    &:hover {
+      opacity: 1;
+      background: $color-primary;
+    }
+  }
+}

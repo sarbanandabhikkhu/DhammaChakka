@@ -1,15 +1,19 @@
 import React from "react";
 import { hot } from "react-hot-loader/root";
-import Header from "./components/Header";
-import data from "../src/data/data.json";
+import appData from "../src/data/app-data.json";
 import logo from "./logo.svg";
+import Nav from "./components/nav/Nav";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
-  const { title, details } = data;
+  const { title, details } = appData;
   return (
     <div className="App">
+      <Nav />
       <img className="Logo" src={logo} alt={title} />
-      <Header title={title} details={details} />
+      <h1>{title}</h1>
+      <h3>{details}</h3>
+      <Footer />
     </div>
   );
 };
