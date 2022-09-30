@@ -1,0 +1,9 @@
+@import "./config";
+@import "./dark";
+@import "./light";
+
+@import "./App";
+@import "../components/welcome/index.scss";
+
+@import "./@media";
+@import "./@frames";

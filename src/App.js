@@ -1,21 +1,15 @@
 import React from "react";
 import { hot } from "react-hot-loader/root";
-import appData from "../src/data/app-data.json";
-import logo from "./logo.svg";
-import Nav from "./components/nav/Nav";
-import Footer from "./components/footer/Footer";
+import Welcome from "./components/welcome";
+import data from "../public/manifest.json";
 
-const App = () => {
-  const { title, details } = appData;
+function App() {
+  const { short_name, name } = data;
   return (
     <div className="App">
-      <Nav />
-      <img className="Logo" src={logo} alt={title} />
-      <h1>{title}</h1>
-      <h3>{details}</h3>
-      <Footer />
+      <Welcome label={short_name} value={name} />
     </div>
   );
-};
+}
 
 export default hot(App);

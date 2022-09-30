@@ -4,8 +4,8 @@ const path = require("path");
 const config = {
   entry: ["react-hot-loader/patch", "./src/index.js"],
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    path: path.resolve(__dirname, "public"),
+    filename: "main.js",
   },
   module: {
     rules: [
@@ -26,7 +26,7 @@ const config = {
           {
             loader: "svg-url-loader",
             options: {
-              limit: 10000,
+              limit: 30000,
             },
           },
         ],
@@ -46,7 +46,7 @@ const config = {
   },
   devServer: {
     static: {
-      directory: "./dist",
+      directory: "./public",
     },
   },
 };

@@ -1,11 +1,10 @@
 .cache/
 coverage/
-dist/*
-!dist/index.html
-!dist/assets/
-!dist/favicon.ico
-!dist/manifest.json
-!dist/robots.txt
+public/*
+!public/index.html
+!public/assets/
+!public/manifest.json
+!public/robots.txt
 node_modules/
 *.log
 

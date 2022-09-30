@@ -1,0 +1,19 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    color: $Dark;
+    background: $Light;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    color: $Dark;
+    background: $Light;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Logo {
+    animation: spining infinite 20s linear;
+  }
+}
