@@ -10,7 +10,7 @@
   "license": "ISC",
   "homepage": "https://sarbanandabhikkhu.github.io/DhammaChakka",
   "scripts": {
-    "clean": "rm public/main.js",
+    "clean": "rm public/main.js && rm public/main.js.LICENSE.txt",
     "predeploy": "npm run build-prod",
     "deploy": "gh-pages -d public && npm run clean",
     "build-dev": "webpack --mode development",
