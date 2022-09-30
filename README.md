@@ -1,6 +1,6 @@
-# React Examples
+# [DhammaChakka](https://github.com/sarbanandabhikkhu/DhammaChakka)
 
-Basic React Example Codes using React 17 & Webpack 5.
+Early Buddhist texts from the Tipitaka (Tripitaka). Suttas (sutras) with the Buddha's teachings on mindfulness, insight, wisdom, and meditation.
 
 ## Build, Run & Deploy
 
@@ -8,7 +8,22 @@ Basic React Example Codes using React 17 & Webpack 5.
 
 ### Building and Running on localhost
 
-First install dependencies:
+First clone project:
+
+```sh
+
+git clone https://github.com/sarbanandabhikkhu/DhammaChakka.git
+
+```
+
+Make sure project directory
+
+```sh
+cd DhammaChakka
+
+```
+
+install dependencies:
 
 ```sh
 
@@ -54,7 +69,7 @@ npm run deploy
 
 ```
 
-Project is completely Hosted on **Github Pages**. [Click here](https://sarbanandabhikkhu.github.io/React-Examples/)
+Project is completely Hosted on **Github Pages**. [Click here](https://sarbanandabhikkhu.github.io/DhammaChakka/)
 
 </details>
 
@@ -102,21 +117,21 @@ Made with [SarbaNanda Bhikkhu](https://github.com/sarbanandabhikkhu/)
 
 ## 📈 Stats
 
-<!-- [![CI](https://github.com/sarbanandabhikkhu/React-Examples/workflows/CI/badge.svg)](https://github.com/sarbanandabhikkhu/React-Examples/actions?query=workflow:"CI") -->
+<!-- [![CI](https://github.com/sarbanandabhikkhu/DhammaChakka/workflows/CI/badge.svg)](https://github.com/sarbanandabhikkhu/DhammaChakka/actions?query=workflow:"CI") -->
 
-[![GitHub tag](https://img.shields.io/github/tag/sarbanandabhikkhu/React-Examples?include_prereleases=&sort=semver&color=blue)](https://github.com/sarbanandabhikkhu/React-Examples/releases/)
+[![GitHub tag](https://img.shields.io/github/tag/sarbanandabhikkhu/DhammaChakka?include_prereleases=&sort=semver&color=blue)](https://github.com/sarbanandabhikkhu/DhammaChakka/releases/)
 [![License](https://img.shields.io/badge/License-MIT-blue)](#license)
-[![issues](https://img.shields.io/github/issues/sarbanandabhikkhu/React-Examples)](https://github.com/sarbanandabhikkhu/React-Examples/issues)
-[![visitors - React-Examples](https://visitor-badge.glitch.me/badge?page_id=sarbanandabhikkhu.React-Examples?style=social)](https://github.com/sarbanandabhikkhu/React-Examples)
-[![stars - React-Examples](https://img.shields.io/github/stars/sarbanandabhikkhu/React-Examples?style=social)](https://github.com/sarbanandabhikkhu/React-Examples)
-[![forks - React-Examples](https://img.shields.io/github/forks/sarbanandabhikkhu/React-Examples?style=social)](https://github.com/sarbanandabhikkhu/React-Examples)
+[![issues](https://img.shields.io/github/issues/sarbanandabhikkhu/DhammaChakka)](https://github.com/sarbanandabhikkhu/DhammaChakka/issues)
+[![visitors - DhammaChakka](https://visitor-badge.glitch.me/badge?page_id=sarbanandabhikkhu.DhammaChakka?style=social)](https://github.com/sarbanandabhikkhu/DhammaChakka)
+[![stars - DhammaChakka](https://img.shields.io/github/stars/sarbanandabhikkhu/DhammaChakka?style=social)](https://github.com/sarbanandabhikkhu/DhammaChakka)
+[![forks - DhammaChakka](https://img.shields.io/github/forks/sarbanandabhikkhu/DhammaChakka?style=social)](https://github.com/sarbanandabhikkhu/DhammaChakka)
 
 ## Documentation
 
 <div align="center">
 
 [![view - Documentation](https://img.shields.io/badge/view-Documentation-blue?style=for-the-badge)](/docs/ "Go to project documentation")
-[![View site - GH Pages](https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge)](https://sarbanandabhikkhu.github.io/React-Examples/)
+[![View site - GH Pages](https://img.shields.io/badge/View_site-GH_Pages-2ea44f?style=for-the-badge)](https://sarbanandabhikkhu.github.io/DhammaChakka/)
 
 </div>
 
