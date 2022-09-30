@@ -1,102 +1,108 @@
 {
+  "name": "DhammaChakka",
   "short_name": "DhammaChakka",
-  "name": "DhammaChakka App",
-  "description": "DhammaChakka is a PWA and Made for a good practicing Buddhism as a Buddhist.",
+  "description": "Early Buddhist texts from the Tipitaka (Tripitaka). Suttas (sutras) with the Buddha's teachings on mindfulness, insight, wisdom, and meditation.",
   "icons": [
     {
-      "src": "/assets/favicon.ico",
+      "src": "./assets/favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "./assets/logo72.png",
-      "type": "image/png",
-      "sizes": "72x72",
-      "purpose": "any"
-    },
-    {
-      "src": "./assets/logo96.png",
-      "type": "image/png",
-      "sizes": "96x96",
-      "purpose": "any"
-    },
-    {
-      "src": "./assets/logo128.png",
-      "type": "image/png",
-      "sizes": "128x128",
-      "purpose": "any"
-    },
-    {
-      "src": "./assets/logo192.png",
-      "type": "image/png",
-      "sizes": "192x192",
-      "purpose": "any"
-    },
-    {
-      "src": "./assets/logo384.png",
-      "type": "image/png",
-      "sizes": "384x384",
-      "purpose": "any"
-    },
-    {
-      "src": "./assets/logo512.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "any"
-    },
-    {
-      "src": "./assets/icon48.png",
+      "src": "./assets/logo_x48.png",
       "type": "image/png",
       "sizes": "48x48",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
-      "src": "./assets/icon72.png",
+      "src": "./assets/logo_x72.png",
       "type": "image/png",
       "sizes": "72x72",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
-      "src": "./assets/icon128.png",
+      "src": "./assets/logo_x96.png",
+      "type": "image/png",
+      "sizes": "96x96",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/logo_x128.png",
       "type": "image/png",
       "sizes": "128x128",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
-      "src": "./assets/icon192.png",
+      "src": "./assets/logo_x192.png",
       "type": "image/png",
       "sizes": "192x192",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
-      "src": "./assets/icon384.png",
+      "src": "./assets/logo_x384.png",
       "type": "image/png",
       "sizes": "384x384",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
-      "src": "./assets/icon512.png",
+      "src": "./assets/logo_x512.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     }
   ],
-  "id": "/",
-  "scope": "/",
-  "start_url": "/",
-  "theme_color": "#61dafb",
+  "id": "./",
+  "scope": "./",
+  "start_url": "./",
+  "theme_color": "#ce8400",
   "background_color": "#282c34",
-  "display_override": ["window-control-overlay", "minimal-ui"],
+  "display_override": [],
   "display": "standalone",
   "shortcuts": [
     {
-      "name": "Homepage",
+      "name": "Home",
       "short_name": "Home",
-      "description": "Go back home",
-      "url": "./index.html",
+      "description": "Go to Home page",
+      "url": "./",
       "icons": [
         {
-          "src": "./assets/logo.png",
+          "src": "./assets/logo_x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "About",
+      "short_name": "About",
+      "description": "Go to About page",
+      "url": "./about",
+      "icons": [
+        {
+          "src": "./assets/logo_x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Services",
+      "short_name": "Services",
+      "description": "Go to Services page",
+      "url": "./services",
+      "icons": [
+        {
+          "src": "./assets/logo_x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "GitHub",
+      "short_name": "GitHub",
+      "description": "Go to GitHub project page",
+      "url": "https://github.com/sarbanandabhikkhu/React-Examples",
+      "icons": [
+        {
+          "src": "./assets/logo_x192.png",
           "sizes": "192x192"
         }
       ]
@@ -104,7 +110,12 @@
   ],
   "screenshots": [
     {
-      "src": "/assets/screenshot1.png",
+      "src": "./assets/mobile.png",
+      "type": "image/png",
+      "sizes": "365x720"
+    },
+    {
+      "src": "./assets/tablet.png",
       "type": "image/png",
       "sizes": "540x720"
     }
