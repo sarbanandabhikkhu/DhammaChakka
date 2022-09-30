@@ -3,7 +3,10 @@
 @import "./light";
 
 @import "./App";
-@import "../components/welcome/index.scss";
+@import "../components/navbar/index";
+@import "../components/accordion/index";
+@import "../components/tabs/index";
+@import "../components/footer/index";
 
 @import "./@media";
 @import "./@frames";

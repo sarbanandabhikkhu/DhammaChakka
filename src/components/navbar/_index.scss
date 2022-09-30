@@ -1,0 +1,69 @@
+.NavBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 45px;
+  height: calc(100% - 20px);
+
+  .MenuBtn {
+    position: fixed;
+    width: 45px;
+    height: 30px;
+    // display: none;
+    align-items: center;
+    background: $Secondary;
+
+    img {
+      width: 45px;
+      height: 30px;
+      padding: 5px;
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+        background: lighten($Secondary, 5);
+      }
+    }
+  }
+
+  .NavContainer {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    width: 45px;
+    height: calc(100% - 50px);
+    background: $Secondary;
+
+    .Top {
+      height: calc(100% - 90px);
+      overflow: hidden;
+    }
+    .Bottom {
+      height: 90px;
+    }
+
+    .Top,
+    .Bottom {
+      width: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .NavBtn {
+        width: 45px;
+        height: 45px;
+        padding: 10px;
+        opacity: 0.6;
+        &:hover {
+          opacity: 1;
+          background: lighten($Secondary, 5);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .MenuBtn {
+      display: block;
+    }
+  }
+}

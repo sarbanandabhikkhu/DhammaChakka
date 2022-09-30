@@ -38,7 +38,7 @@
     color: $Accent;
 
     &:hover {
-      color: $Anchor;
+      color: darken($Accent, 5);
       background: $Secondary;
     }
   }

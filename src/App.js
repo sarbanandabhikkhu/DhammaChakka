@@ -1,13 +1,17 @@
 import React from "react";
 import { hot } from "react-hot-loader/root";
-import Welcome from "./components/welcome";
-import data from "../public/manifest.json";
+import Navbar from "./components/navbar";
+import Accordion from "./components/accordion";
+import Tabs from "./components/tabs";
+import Footer from "./components/footer";
 
 function App() {
-  const { short_name, name } = data;
   return (
     <div className="App">
-      <Welcome label={short_name} value={name} />
+      <Navbar />
+      <Accordion />
+      <Tabs />
+      <Footer />
     </div>
   );
 }

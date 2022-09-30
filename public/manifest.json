@@ -55,7 +55,7 @@
   "scope": "./",
   "start_url": "./",
   "theme_color": "#ce8400",
-  "background_color": "#282c34",
+  "background_color": "#ffffff",
   "display_override": [],
   "display": "standalone",
   "shortcuts": [

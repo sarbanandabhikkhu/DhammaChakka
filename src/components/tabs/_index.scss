@@ -1,0 +1,103 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Tabs {
+  top: 0;
+  right: 0;
+  left: 245px;
+  position: fixed;
+  width: calc(100% - 45px);
+  height: calc(100% - 20px);
+  background: $Primary;
+}
+
+.bloc-tabs {
+  width: calc(100% - 70px);
+  height: 30px;
+  position: fixed;
+  height: 30px;
+  display: flex;
+  font-size: 12px;
+  line-height: 30px;
+  overflow: scroll;
+  background: $Secondary;
+}
+.tabs {
+  min-width: 75px;
+  padding: 0 10px;
+  overflow: hidden;
+  line-height: 30px;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  color: darken($Light, 25);
+  background: darken($Secondary, 2);
+  box-sizing: content-box;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+.tabs:not(:last-child) {
+  border-right: 1px solid $Primary;
+}
+
+.active-tabs {
+  color: $Accent;
+  background: $Primary;
+}
+
+.active-tabs::before {
+  content: "";
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  transform: translateX(-50%);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: $Accent;
+}
+
+button {
+  border: none;
+}
+.content-tabs {
+  flex-grow: 1;
+  margin-top: 30px;
+}
+.content {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  color: darken($Light, 25);
+}
+.content h2 {
+  padding: 0px 0 5px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+}
+.active-content {
+  display: block;
+}
+
+@media screen and (max-width: 500px) {
+  .Tabs {
+    left: 45px;
+  }
+}
