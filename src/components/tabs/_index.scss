@@ -1,19 +1,12 @@
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .Tabs {
   top: 0;
   right: 0;
   left: 245px;
+  z-index: -1;
   position: fixed;
   width: calc(100% - 45px);
   height: calc(100% - 20px);
-  background: $Primary;
+  background: lighten($Secondary, 5);
 }
 
 .bloc-tabs {
@@ -43,12 +36,12 @@
   outline: none;
 }
 .tabs:not(:last-child) {
-  border-right: 1px solid $Primary;
+  border-right: 1px solid lighten($Secondary, 5);
 }
 
 .active-tabs {
-  color: $Accent;
-  background: $Primary;
+  color: $Primary;
+  background: lighten($Secondary, 5);
 }
 
 .active-tabs::before {
@@ -62,7 +55,7 @@
   transform: translateX(-50%);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  background: $Accent;
+  background: $Primary;
 }
 
 button {

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import data from "../../data/pali/pārājika.json";
+import TabBtn from "./TabBtn";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -28,6 +30,12 @@ function Tabs() {
         >
           Tab 3
         </button>
+        <button
+          className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(4)}
+        >
+          pārājika.json
+        </button>
       </div>
 
       <div className="content-tabs">
@@ -35,7 +43,6 @@ function Tabs() {
           className={toggleState === 1 ? "content  active-content" : "content"}
         >
           <h2>Content 1</h2>
-          <hr />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
             praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
@@ -47,7 +54,6 @@ function Tabs() {
           className={toggleState === 2 ? "content  active-content" : "content"}
         >
           <h2>Content 2</h2>
-          <hr />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
             voluptatum qui adipisci.
@@ -58,7 +64,6 @@ function Tabs() {
           className={toggleState === 3 ? "content  active-content" : "content"}
         >
           <h2>Content 3</h2>
-          <hr />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed
             nostrum rerum laudantium totam unde adipisci incidunt modi alias!
@@ -67,6 +72,19 @@ function Tabs() {
             laboriosam architecto optio rem, dignissimos voluptatum beatae
             aperiam voluptatem atque. Beatae rerum dolores sunt.
           </p>
+        </div>
+
+        <div
+          className={toggleState === 4 ? "content  active-content" : "content"}
+        >
+          <h2>pārājika</h2>
+          {data
+            .map((item) => {
+              {
+                item.id;
+              }
+            })
+            .join("")}
         </div>
       </div>
     </div>

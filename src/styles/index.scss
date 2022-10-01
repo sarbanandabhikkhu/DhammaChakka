@@ -1,12 +1,14 @@
 @import "./config";
 @import "./dark";
 @import "./light";
-
 @import "./App";
+
 @import "../components/navbar/index";
+@import "../components/asidebar/index";
 @import "../components/accordion/index";
 @import "../components/tabs/index";
 @import "../components/footer/index";
+@import "../components/theme/index";
 
 @import "./@media";
 @import "./@frames";

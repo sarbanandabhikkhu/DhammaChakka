@@ -1,13 +1,12 @@
 import React from "react";
-import { BrandLogo } from "../../logo.svg";
+import Brand from "./Brand";
+import Notifications from "./Notifications";
 
 function Footer() {
   return (
     <div className="Footer">
-      <div className="HostBar">
-        <img src={BrandLogo} alt="DhammaChakka" />
-        <span>DhammaChakka</span>
-      </div>
+      <Brand />
+      <Notifications />
     </div>
   );
 }

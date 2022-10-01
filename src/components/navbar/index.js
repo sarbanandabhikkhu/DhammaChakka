@@ -27,7 +27,8 @@ function Navbar() {
       <div className="MenuBtn">
         <img onClick={toggleNav} src={Menu} alt="Menu" />
       </div>
-      {(toggleMenu || screenWidth > 500) && <Nav />}
+      <Nav />
+      {/* {(toggleMenu || screenWidth > 500) && <Nav />} */}
     </div>
   );
 }
