@@ -2,6 +2,13 @@
   "name": "DhammaChakka",
   "short_name": "DhammaChakka",
   "description": "Early Buddhist texts from the Tipitaka (Tripitaka). Suttas (sutras) with the Buddha's teachings on mindfulness, insight, wisdom, and meditation.",
+  "id": "./",
+  "scope": "./",
+  "start_url": "./",
+  "theme_color": "#61dafb",
+  "background_color": "#282c34",
+  "display_override": [],
+  "display": "standalone",
   "icons": [
     {
       "src": "./assets/favicon.ico",
@@ -9,55 +16,48 @@
       "type": "image/x-icon"
     },
     {
-      "src": "./assets/logo_x48.png",
+      "src": "./assets/maskable_x48.png",
       "type": "image/png",
       "sizes": "48x48",
       "purpose": "any maskable"
     },
     {
-      "src": "./assets/logo_x72.png",
+      "src": "./assets/maskable_x72.png",
       "type": "image/png",
       "sizes": "72x72",
       "purpose": "any maskable"
     },
     {
-      "src": "./assets/logo_x96.png",
+      "src": "./assets/maskable_x96.png",
       "type": "image/png",
       "sizes": "96x96",
       "purpose": "any maskable"
     },
     {
-      "src": "./assets/logo_x128.png",
+      "src": "./assets/maskable_x128.png",
       "type": "image/png",
       "sizes": "128x128",
       "purpose": "any maskable"
     },
     {
-      "src": "./assets/logo_x192.png",
+      "src": "./assets/maskable_x192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "./assets/logo_x384.png",
+      "src": "./assets/maskable_x384.png",
       "type": "image/png",
       "sizes": "384x384",
       "purpose": "any maskable"
     },
     {
-      "src": "./assets/logo_x512.png",
+      "src": "./assets/maskable_x512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
     }
   ],
-  "id": "./",
-  "scope": "./",
-  "start_url": "./",
-  "theme_color": "#ce8400",
-  "background_color": "#ffffff",
-  "display_override": [],
-  "display": "standalone",
   "shortcuts": [
     {
       "name": "Home",

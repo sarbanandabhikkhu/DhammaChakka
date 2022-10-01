@@ -1,19 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css");
 
+$BalooDa2: "Baloo 2";
+
 // Brand Colors
 $SuttaCentralPrimary: #ce8400;
 $SuttaCentralSecondary: #741613e5;
 
 $ReactPrimary: #61dafb;
 $ReactSecondary: #282c34;
-$ReactSecondaryDark: #20232a;
 
+$WebDev: #3367d6;
+$MaskableApp: #ffd567;
+$MaskableAppBlue: #448aff;
+
+// Common Colors
 $Dark: #000000;
 $Light: #ffffff;
 
+// App Colors
 $Primary: $ReactSecondary;
 $Secondary: $ReactSecondary;
 $Accent: $SuttaCentralPrimary;
-
-$BalooDa2: "Baloo 2";
