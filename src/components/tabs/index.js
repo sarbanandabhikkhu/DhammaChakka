@@ -7,10 +7,12 @@ function Tabs() {
   const [parajika, setParajika] = useState(false);
   // const uid = new Date().getTime().toString(36);
   const URL =
-    "https://sarbanandabhikkhu.github.io/dhammachakka/" ||
-    "http://localhost:8080/";
+    "https://sarbanandabhikkhu.github.io/DhammaChakka/data/pārājika.json";
+  // "http://localhost:8080/data/pārājika.json";
+  // "http://localhost:8080/data/sample.json";
+
   useEffect(() => {
-    fetch(URL + "data/pārājika.json")
+    fetch(URL)
       .then((res) => res.json())
       .then((data) => {
         setParajika(data);
