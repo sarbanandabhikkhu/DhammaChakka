@@ -10,7 +10,7 @@
     border: none;
     opacity: 0.6;
     cursor: pointer;
-    color: darken($Light, 10);
+    color: darken($Light, 5);
     background: darken($Secondary, 5);
     &:hover {
       opacity: 0.9;
@@ -36,7 +36,7 @@
     opacity: 0;
     font-size: 14px;
     padding-left: 20px;
-    color: darken($Light, 50);
+    color: darken($Light, 40);
     transition: opacity 0.3s ease-in-out, height 0.3s 0.3s ease-in-out;
 
     &:hover {

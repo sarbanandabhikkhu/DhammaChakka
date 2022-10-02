@@ -96,13 +96,25 @@
       ]
     },
     {
-      "name": "GitHub",
+      "name": "GitHub Open Source",
       "short_name": "GitHub",
       "description": "Go to GitHub project page",
       "url": "https://github.com/sarbanandabhikkhu/React-Examples",
       "icons": [
         {
           "src": "./assets/logo_x192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "The Pali Tipitaka",
+      "short_name": "Pali Tipitaka",
+      "description": "Go to Services page",
+      "url": "https://www.tipitaka.org/",
+      "icons": [
+        {
+          "src": "https://www.tipitaka.org/images/aniwheel2.gif",
           "sizes": "192x192"
         }
       ]

@@ -1,6 +1,6 @@
 import React from "react";
 import exclamation from "../../icons/exclamation.svg";
-import clock from "../../icons/clock.svg";
+import bulb from "../../icons/bulb.svg";
 import bell from "../../icons/bell.svg";
 
 function Notifications() {
@@ -10,7 +10,7 @@ function Notifications() {
         <img src={exclamation} alt="Exclamation" />
       </div>
       <div className="notify">
-        <img src={clock} alt="Clock" />
+        <img src={bulb} alt="Clock" />
         <img src={bell} alt="Notifications" />
       </div>
     </div>

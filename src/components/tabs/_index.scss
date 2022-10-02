@@ -7,90 +7,151 @@
   width: calc(100% - 45px);
   height: calc(100% - 20px);
   background: lighten($Secondary, 5);
-}
 
-.bloc-tabs {
-  width: calc(100% - 70px);
-  height: 30px;
-  position: fixed;
-  height: 30px;
-  display: flex;
-  font-size: 12px;
-  line-height: 30px;
-  overflow: scroll;
-  background: $Secondary;
-}
-.tabs {
-  min-width: 75px;
-  padding: 0 10px;
-  overflow: hidden;
-  line-height: 30px;
-  text-align: left;
-  align-items: center;
-  justify-content: center;
-  color: darken($Light, 25);
-  background: darken($Secondary, 2);
-  box-sizing: content-box;
-  position: relative;
-  cursor: pointer;
-  outline: none;
-}
-.tabs:not(:last-child) {
-  border-right: 1px solid lighten($Secondary, 5);
-}
+  .tab-buttons {
+    width: calc(100% - (45px + 200px + 70px));
+    height: 30px;
+    position: fixed;
+    display: flex;
+    overflow: scroll;
+    background: $Secondary;
+  }
 
-.active-tabs {
-  color: $Primary;
-  background: lighten($Secondary, 5);
-}
+  .tab {
+    min-width: 75px;
+    padding: 0 10px;
+    overflow: hidden;
+    font-size: 11px;
+    line-height: 30px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    color: darken($Light, 25);
+    background: darken($Secondary, 2);
+    box-sizing: content-box;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
 
-.active-tabs::before {
-  content: "";
-  top: 0;
-  left: 50%;
-  width: 100%;
-  height: 2px;
-  display: block;
-  position: absolute;
-  transform: translateX(-50%);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background: $Primary;
-}
+    &:not(:last-child) {
+      border-right: 1px solid lighten($Secondary, 5);
+    }
+  }
 
-button {
-  border: none;
-}
-.content-tabs {
-  flex-grow: 1;
-  margin-top: 30px;
-}
-.content {
-  padding: 20px;
-  width: 100%;
-  height: 100%;
-  display: none;
-  color: darken($Light, 25);
-}
-.content h2 {
-  padding: 0px 0 5px 0px;
-}
-.content hr {
-  width: 100px;
-  height: 2px;
-  background: #222;
-  margin-bottom: 5px;
-}
-.content p {
-  width: 100%;
-  height: 100%;
-}
-.active-content {
-  display: block;
+  .active-tab {
+    color: $Primary;
+    background: lighten($Secondary, 5);
+
+    &::before {
+      content: "";
+      top: 0;
+      left: 50%;
+      width: 100%;
+      height: 3px;
+      display: block;
+      position: absolute;
+      transform: translateX(-50%);
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background: $Primary;
+    }
+  }
+
+  .tab-action {
+    position: fixed;
+    right: 0;
+    width: 70px;
+    height: 30px;
+    display: flex;
+    background: $Secondary;
+
+    img {
+      width: 30px;
+      height: 30px;
+      padding: 5px;
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .tab-contents {
+    flex-grow: 1;
+    padding: 20px;
+    margin-top: 30px;
+    overflow: scroll;
+    padding-bottom: 50px;
+    width: calc(100% - 200px);
+    height: calc(100% - 30px);
+
+    .content {
+      display: none;
+      h2,
+      h3,
+      h4 {
+        text-align: center;
+        padding-bottom: 10px;
+        color: darken($Light, 25);
+      }
+      h4:last-child {
+        margin-bottom: 50px;
+      }
+      p {
+        color: darken($Light, 25);
+        margin: 20px 0;
+        text-indent: 5%;
+        font-size: 13pt;
+        line-height: 1.5;
+      }
+      b {
+        font-size: 12pt;
+      }
+      span {
+        opacity: 0.5;
+      }
+      .g {
+        margin-top: 0;
+        text-indent: 0;
+        margin-bottom: 0;
+        margin-left: 13%;
+      }
+      .ge {
+        margin-top: 0;
+        text-indent: 0;
+        margin-left: 13%;
+      }
+      .gend {
+        margin-top: 0;
+        text-indent: 0;
+        margin-left: 13%;
+        margin-bottom: 50px;
+      }
+      .end {
+        text-indent: 0;
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: medium;
+      }
+    }
+    .active-content {
+      display: block;
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
   .Tabs {
     left: 45px;
+
+    .tab-buttons {
+      width: calc(100% - (45px + 70px));
+    }
+
+    .tab-contents {
+      width: 100%;
+      padding: 10px;
+    }
   }
 }

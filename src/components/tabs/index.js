@@ -1,91 +1,49 @@
-import React, { useState } from "react";
-import data from "../../data/pali/pārājika.json";
-import TabBtn from "./TabBtn";
+import React, { useEffect, useState } from "react";
+import TabAction from "./TabAction";
+import { TabContent, TabButton } from "./TabData";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
-
-  const toggleTab = (index) => {
-    setToggleState(index);
-  };
+  const [parajika, setParajika] = useState(false);
+  // const uid = new Date().getTime().toString(36);
+  const URL =
+    "https://sarbanandabhikkhu.github.io/dhammachakka/" ||
+    "http://localhost:8080/";
+  useEffect(() => {
+    fetch(URL + "data/pārājika.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setParajika(data);
+        console.log(data);
+      });
+  }, []);
 
   return (
     <div className="Tabs">
-      <div className="bloc-tabs">
-        <button
-          className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-          onClick={() => toggleTab(1)}
-        >
-          Tab 1
-        </button>
-        <button
-          className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-          onClick={() => toggleTab(2)}
-        >
-          Tab 2
-        </button>
-        <button
-          className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-          onClick={() => toggleTab(3)}
-        >
-          Tab 3
-        </button>
-        <button
-          className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
-          onClick={() => toggleTab(4)}
-        >
-          pārājika.json
-        </button>
+      <div className="tab-buttons">
+        {parajika &&
+          parajika.map((data, index) => (
+            <TabButton
+              toggleState={toggleState}
+              setToggleState={setToggleState}
+              tabIndex={index + 1}
+              buttonText={data.title.split(",")}
+            />
+          ))}
       </div>
 
-      <div className="content-tabs">
-        <div
-          className={toggleState === 1 ? "content  active-content" : "content"}
-        >
-          <h2>Content 1</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            praesentium incidunt quia aspernatur quasi quidem facilis quo nihil
-            vel voluptatum?
-          </p>
-        </div>
+      <TabAction />
 
-        <div
-          className={toggleState === 2 ? "content  active-content" : "content"}
-        >
-          <h2>Content 2</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            voluptatum qui adipisci.
-          </p>
-        </div>
-
-        <div
-          className={toggleState === 3 ? "content  active-content" : "content"}
-        >
-          <h2>Content 3</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos sed
-            nostrum rerum laudantium totam unde adipisci incidunt modi alias!
-            Accusamus in quia odit aspernatur provident et ad vel distinctio
-            recusandae totam quidem repudiandae omnis veritatis nostrum
-            laboriosam architecto optio rem, dignissimos voluptatum beatae
-            aperiam voluptatem atque. Beatae rerum dolores sunt.
-          </p>
-        </div>
-
-        <div
-          className={toggleState === 4 ? "content  active-content" : "content"}
-        >
-          <h2>pārājika</h2>
-          {data
-            .map((item) => {
-              {
-                item.id;
-              }
-            })
-            .join("")}
-        </div>
+      <div className="tab-contents">
+        {parajika &&
+          parajika.map((data, index) => (
+            <TabContent
+              toggleState={toggleState}
+              tabIndex={index + 1}
+              title={parajika[index].title}
+              content={data.content}
+            />
+          ))}
       </div>
     </div>
   );

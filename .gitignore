@@ -1,6 +1,7 @@
 .cache/
 coverage/
 public/*
+!public/data/
 !public/index.html
 !public/assets/
 !public/manifest.json
