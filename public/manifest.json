@@ -16,43 +16,43 @@
       "type": "image/x-icon"
     },
     {
-      "src": "./assets/maskable_x48.png",
+      "src": "./assets/maskable_icon_x48.png",
       "type": "image/png",
       "sizes": "48x48",
       "purpose": "any maskable"
     },
     {
-      "src": "./assets/maskable_x72.png",
+      "src": "./assets/maskable_icon_x72.png",
       "type": "image/png",
       "sizes": "72x72",
       "purpose": "any maskable"
     },
     {
-      "src": "./assets/maskable_x96.png",
+      "src": "./assets/maskable_icon_x96.png",
       "type": "image/png",
       "sizes": "96x96",
       "purpose": "any maskable"
     },
     {
-      "src": "./assets/maskable_x128.png",
+      "src": "./assets/maskable_icon_x128.png",
       "type": "image/png",
       "sizes": "128x128",
       "purpose": "any maskable"
     },
     {
-      "src": "./assets/maskable_x192.png",
+      "src": "./assets/maskable_icon_x192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "./assets/maskable_x384.png",
+      "src": "./assets/maskable_icon_x384.png",
       "type": "image/png",
       "sizes": "384x384",
       "purpose": "any maskable"
     },
     {
-      "src": "./assets/maskable_x512.png",
+      "src": "./assets/maskable_icon_x512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
@@ -96,21 +96,9 @@
       ]
     },
     {
-      "name": "GitHub Open Source",
-      "short_name": "GitHub",
-      "description": "Go to GitHub project page",
-      "url": "https://github.com/sarbanandabhikkhu/React-Examples",
-      "icons": [
-        {
-          "src": "./assets/logo_x192.png",
-          "sizes": "192x192"
-        }
-      ]
-    },
-    {
       "name": "The Pali Tipitaka",
       "short_name": "Pali Tipitaka",
-      "description": "Go to Services page",
+      "description": "This web site is based on the Chaṭṭha Saṅgāyana CD published by the Vipassana Research Institute.",
       "url": "https://www.tipitaka.org/",
       "icons": [
         {
@@ -122,14 +110,20 @@
   ],
   "screenshots": [
     {
-      "src": "./assets/mobile.png",
+      "src": "./assets/portrait.png",
       "type": "image/png",
-      "sizes": "365x720"
+      "sizes": "1080x2131"
     },
     {
-      "src": "./assets/tablet.png",
+      "src": "./assets/landscape.png",
       "type": "image/png",
-      "sizes": "540x720"
+      "sizes": "2125x1016"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=DhammaChakka"
     }
   ]
 }

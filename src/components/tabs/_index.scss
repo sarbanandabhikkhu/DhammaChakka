@@ -48,7 +48,7 @@
       top: 0;
       left: 50%;
       width: 100%;
-      height: 3px;
+      height: 2px;
       display: block;
       position: absolute;
       transform: translateX(-50%);
@@ -61,15 +61,16 @@
   .tab-action {
     position: fixed;
     right: 0;
-    width: 70px;
+    width: calc(70px - 1px);
     height: 30px;
     display: flex;
+    text-align: right;
     background: $Secondary;
 
     img {
       width: 30px;
       height: 30px;
-      padding: 5px;
+      padding: 7px;
       opacity: 0.6;
       &:hover {
         opacity: 1;

@@ -16,7 +16,7 @@
     img {
       width: 45px;
       height: 30px;
-      padding: 5px;
+      padding: 7px;
       opacity: 0.6;
       &:hover {
         opacity: 1;
@@ -34,11 +34,11 @@
     background: $Secondary;
 
     .Top {
-      height: calc(100% - 90px);
+      height: calc(100% - 80px);
       overflow: hidden;
     }
     .Bottom {
-      height: 90px;
+      height: 80px;
     }
 
     .Top,
@@ -50,12 +50,12 @@
 
       .NavBtn {
         width: 45px;
-        height: 45px;
-        padding: 11px;
+        height: 40px;
+        padding: 10px;
         opacity: 0.6;
         &:hover {
           opacity: 1;
-          background: lighten($Secondary, 5);
+          // background: lighten($Secondary, 5);
         }
       }
     }
