@@ -17,26 +17,21 @@ const TabButton = ({ toggleState, setToggleState, tabIndex, buttonText }) => {
   );
 };
 
-const Paragraph = ({ content }) => {
-  if (/^\"g\"/.test(content)) {
-    return <p className="g">{content.replace(/\"g\"/, "")}</p>;
-  } else if (/^\"g\)\"/.test(content)) {
-    return <p className="ge">{content.replace(/^\"g\)\"/, "")}</p>;
-  } else if (/^\"g\)\)\"/.test(content)) {
-    return <p className="gend">{content.replace(/^\"g\)\)\"/, "")}</p>;
-  } else if (/^\"\)\"/.test(content)) {
-    return <h4 className="end">{content.replace(/^\"\)\"/, "")}</h4>;
-  } else {
+const Para = ({ title, content }) => {
+  return content.split(/\n\n/).map((paragraph) => {
     return (
-      <p>
-        {content
-          .replace(/\"b\"/gi, "<b>")
-          .replace(/\"b\)\"/gi, "</b>")
-          .replace(/\[/gi, "<span>[")
-          .replace(/\]/gi, "]</span>")}
+      <p className="paragraph">
+        {paragraph
+          .replace(/\[/, "———[")
+          .replace(/\]/, "]———")
+          .split(/———/)
+          .map((quote) => {
+            if (quote[0] === "[") return <span className="quote">{quote}</span>;
+            return quote;
+          })}
       </p>
     );
-  }
+  });
 };
 
 const TabContent = (props) => {
@@ -48,8 +43,11 @@ const TabContent = (props) => {
         toggleState === tabIndex ? "content active-content" : "content"
       }
     >
-      <h3>{title}</h3>
-      {content && content.map((content) => <Paragraph content={content} />)}
+    
+      		<h3 className="heading">
+        {title.split(",")[title.split(",").length - 1]}
+      </h3>
+      <Para title={title} content={content} />;
     </div>
   );
 };

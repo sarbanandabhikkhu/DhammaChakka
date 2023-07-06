@@ -31,7 +31,7 @@ function Accordion() {
   const [parajika, setParajika] = useState(false);
   const URL =
     "https://sarbanandabhikkhu.github.io/DhammaChakka/data/pārājika.json";
-  // "http://localhost:8080/data/pārājika.json";
+    // "http://localhost:8080/data/pārājika.json";
 
   const refHeight = useRef();
 

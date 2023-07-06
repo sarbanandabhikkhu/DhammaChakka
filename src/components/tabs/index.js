@@ -8,8 +8,7 @@ function Tabs() {
   // const uid = new Date().getTime().toString(36);
   const URL =
     "https://sarbanandabhikkhu.github.io/DhammaChakka/data/pārājika.json";
-  // "http://localhost:8080/data/pārājika.json";
-  // "http://localhost:8080/data/sample.json";
+    // "http://localhost:8080/data/pārājika.json";
 
   useEffect(() => {
     fetch(URL)
@@ -43,7 +42,7 @@ function Tabs() {
               toggleState={toggleState}
               tabIndex={index + 1}
               title={parajika[index].title}
-              content={data.content}
+              content={parajika[index].content}
             />
           ))}
       </div>
